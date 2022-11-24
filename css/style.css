@@ -26,7 +26,8 @@ body {
 }
 
 .container {
-  width: 1128px;
+  padding: 0 15px;
+  width: 1158px;
   margin: 0 auto;
 }
 
@@ -39,7 +40,6 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--brand-color2);
-  margin: 0 77px 0 0;
   font-family: "Raleway", sans-serif;
 }
 
@@ -48,6 +48,7 @@ body {
 }
 
 header {
+  padding: 24px 0;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
@@ -55,7 +56,6 @@ header {
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 24px 0;
 }
 
 .header__menu {
@@ -69,10 +69,18 @@ header {
 
 .header__menu__list a {
   color: var(--brand-color2);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 .header__menu__list li {
   margin: 0 40px 0 0;
+}
+
+.header__menu__list li:nth-child(1) {
+  margin: 0 40px 0 77px;
 }
 
 .header__menu__list li:nth-child(3) {
@@ -94,6 +102,10 @@ header {
 
 .header__contact li a {
   color: var(--brand-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 .header__contact li {
@@ -115,13 +127,14 @@ header {
 
 .main__header {
   background-color: var(--brand-color2);
+  padding: 192px 0;
+  text-align: center;
 }
 
 .container__main__header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 192px 0;
 }
 
 .main__header h1 {
@@ -131,7 +144,7 @@ header {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--white-color);
-  margin: 0 0 48px 0;
+  margin: 0 auto;
   width: 496px;
 }
 
@@ -146,6 +159,7 @@ header {
   color: var(--white-color);
   border: none;
   cursor: pointer;
+  margin: 48px 0 0 0;
 }
 
 .main__header button:hover {
@@ -225,6 +239,7 @@ header {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
+  padding: 0 0 32px 0;
 }
 
 .teammate h3 {
@@ -233,8 +248,7 @@ header {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.02em;
-  padding: 32px 0 0 0;
-  margin: 0 0 8px 0;
+  margin: 32px 0 8px 0;
 }
 
 .teammate p {
@@ -243,7 +257,6 @@ header {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--brand-color);
-  padding: 0 0 32px 0;
 }
 
 footer {
@@ -259,18 +272,18 @@ footer p {
 
 .logo__footer {
   color: var(--white-color2);
+  display: inline-block;
 }
 
 /* Portfolio */
 
 .portfolio__content {
-  padding: 72px 0;
+  padding: 96px 0 120px 0;
 }
 
 .portfolio__buttons {
   display: flex;
   justify-content: center;
-  margin: 24px 0 0 0;
 }
 
 .portfolio__buttons button {
@@ -279,7 +292,7 @@ footer p {
   border-radius: 4px;
   color: var(--blu-color);
   cursor: pointer;
-  padding: 4px 8px;
+  padding: 8px 16px;
 }
 
 .portfolio__buttons li {
@@ -307,13 +320,33 @@ footer p {
 
 .portfolio__item {
   display: flex;
-  justify-content: space-between;
-  margin: 48px 0;
+  flex-wrap: wrap;
+  margin: 72px 0 0 0;
 }
 
-.portfolio__item li {
-  border: 0.5px solid #f4f4fd;
+.portfolio__item__text{
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+  padding: 32px 0 32px 16px;
+}
+.portfolio__item li:nth-child(n+7){
+  margin: 0 24px 0 0;
+}
+.portfolio__item li:nth-child(3n+3){
+  margin: 0 0 48px 0;
+}
+.portfolio__item li:nth-child(9){
+  margin: 0;
+}
+
+
+
+.portfolio__item li {
+
+  margin: 0 24px 48px 0;
+}
+
+.portfolio__item img{
+  display: block;
 }
 
 .portfolio__item li:hover,
@@ -327,7 +360,7 @@ footer p {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  margin: 32px 0 8px 16px;
+  margin: 0 0 8px 0;
 }
 
 .portfolio__item p {
@@ -335,16 +368,16 @@ footer p {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--brand-color);
-  margin: 0 0 32px 16px;
+
 }
 
 /* footer */
 
-footer{
+footer {
   padding: 100px 0;
 }
 
-footer p{
+footer p {
   max-width: 264px;
   margin: 16px 0 0 0;
 }
