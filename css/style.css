@@ -324,28 +324,25 @@ footer p {
   margin: 72px 0 0 0;
 }
 
-.portfolio__item__text{
+.portfolio__item__text {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
   padding: 32px 0 32px 16px;
 }
-.portfolio__item li:nth-child(n+7){
+.portfolio__item li:nth-child(n + 7) {
   margin: 0 24px 0 0;
 }
-.portfolio__item li:nth-child(3n+3){
+.portfolio__item li:nth-child(3n + 3) {
   margin: 0 0 48px 0;
 }
-.portfolio__item li:nth-child(9){
+.portfolio__item li:nth-child(9) {
   margin: 0;
 }
 
-
-
 .portfolio__item li {
-
   margin: 0 24px 48px 0;
 }
 
-.portfolio__item img{
+.portfolio__item img {
   display: block;
 }
 
@@ -368,7 +365,6 @@ footer p {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--brand-color);
-
 }
 
 /* footer */
