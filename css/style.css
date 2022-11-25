@@ -343,8 +343,6 @@ footer {
 }
 
 .portfolio__item__text {
-  border: 0.5px solid #F4F4FD;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
   padding: 32px 0 32px 16px;
 }
 .portfolio__item li:nth-child(n + 7) {
@@ -358,6 +356,7 @@ footer {
 }
 
 .portfolio__item li {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
   margin: 0 24px 48px 0;
 }
 
